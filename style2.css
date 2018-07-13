@@ -1,0 +1,95 @@
+a {
+    text-decoration: none;
+    color: black
+}
+.header {
+    border-bottom: 2px solid silver;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul li {
+    display: inline-block;
+}
+
+.menu ul li a {
+    padding: 15px 20px;
+    white-space: nowrap;
+    font-size: 18px;
+}
+
+.menu ul li a:hover{
+    background: silver;
+}
+
+.wrapper {
+    background: white;
+    width: 500px;
+    height: 500px;
+    margin: 100px auto;
+    border: grey 1px solid;
+}
+
+.block {
+    width: 250px;
+    height: 250px;
+    position: relative;
+}
+.block:hover{
+    z-index: 5;
+}
+.green
+{
+	background: #1aff20;
+    bottom: 150px;
+    left: 200px;
+	z-index: 2;
+}
+.red {
+    background: red;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+}
+.blue {
+    background: #5948ff;
+    bottom: 300px;
+    left: 25px;
+    z-index: 3;
+}
+.yellow {
+    background: yellow;
+    bottom: 525px;
+    left: 225px;
+    z-index: 4;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background: grey;
+    border-radius: 50%;
+    z-index: 1;
+    position: relative;
+    top: 130px;
+    left: 130px;
+}
+.circle span {
+    top: 50%;
+	left:15%;
+    display: block;
+    width: 70px;
+    height: 10px;
+    margin-bottom: 10px;
+    background: black;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+
+.circle span:last-child {
+    transform:rotate(-45deg); 
+	margin-bottom: 0;
+}
