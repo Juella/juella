@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  position: relative; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+ul li {
+  list-style: none; }
+
+nav {
+  align-items: center; }
+
+h1 {
+  font: 60px "Lobster";
+  color: blue; }
+
+h2 {
+  font: 40px "Lobster";
+  color: black; }
+
+h3 {
+  font: 26px "Lobster";
+  color: white; }
+
+.red {
+  background-color: #f15b4f; }
+
+.green {
+  background: #11be0b; }
+
+.blue {
+  background: darkblue; }
+
+.Button {
+  font-family: Arial,sans-serif;
+  font-weight: bold;
+  width: 162px;
+  height: 46px;
+  border-radius: 23px;
+  text-align: center;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: white; }
+  .Button i {
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+    margin-left: 15px; }
+  .Button:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 7px black;
+    transition: all .2s; }
+
+.LogoStripe {
+  height: 30px;
+  background: darkblue; }
+  .LogoStripe__Logo {
+    position: absolute;
+    z-index: 1; }
+  .LogoStripe__Social {
+    font-size: 22px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1; }
+    .LogoStripe__Social a {
+		display: flex;
+      color: white;
+		margin-right: 18px;	  }
+      .LogoStripe__Social a:hover {
+        opacity: 0.5;
+        transition: 0.3s; }
+
+.Navigation {
+  height: 93px;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+.Burger {
+  position: relative;
+  display: none;
+  padding: 5px;
+  margin-right: 20px; }
+  .Burger:hover {
+    color: blue; }
+	.Burger:hover .Burger__Items
+	{
+		display:block;
+	}
+  .Burger__Icon {
+    color: grey;
+    font-size: 25px;
+    padding-top: 5px; }
+  .Burger__Items {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 4px;
+    z-index: 3;
+    background: white;
+	opacity:0.85;
+    box-shadow: 1px 1px 2px black; }
+    .Burger__Items a {
+      display: block;
+      height: 38px;
+      padding: 5px 20px;
+      font-family: "Open Sans";
+      font-size: 15px;
+      color: grey;
+	  opacity:0.48;
+      line-height: 38px; }
+      .Burger__Items a:hover {
+        color: blue;
+        background: white; }
+
+.HorizMenu {
+  display: flex; }
+  .HorizMenu li:hover {
+    border-radius: 20px;
+    border: 1px solid blue;
+    background-color: white;
+    transition: background-color 0.5s; }
+  .HorizMenu a {
+    display: block;
+    height: 38px;
+    padding: 1px 12px;
+    font-family: "Open Sans";
+    font-size: 15px;
+    border-radius: 10px;
+    color: lightGrey;
+    line-height: 38px; }
+    .HorizMenu a:hover {
+      color: blue;
+      padding-left: 11px; 
+	  padding-right:11px;
+	  }
+.Slider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*justify-content: space-between;*/
+  align-items: flex-start; 
+  max-width: 100%;
+  height: 600px;
+  background: url(../Img/Wilks.jpg) no-repeat center;
+  background-size: cover; }
+
+
+.mainMessage {
+  width: 418px;
+  padding-bottom: 100px; }
+  .mainMessage__text {
+    font-family: "Open Sans";
+    color: black;
+    margin-top: 15px;
+	margin-bottom:28px; }
+  .mainMessage__buttons {
+    display: flex;
+    justify-content: flex-start; }
+    .mainMessage__buttons .Button {
+      margin-right: 15px; }
+
+.Main__Header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -85px; }
+
+.actionBlock {
+  font-family: "Open Sans";
+  width: 376px;
+  height: 164px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding: 30px 25px 40px 20px;
+  margin-right: 15px; }
+  .actionBlock:last-child {
+    margin-right: 0; }
+  .actionBlock:hover {
+    box-shadow: 2px 2px 7px black;
+    transition: all 0.2s; }
+  .actionBlock__icon {
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+    align-self: center;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    box-shadow: 3px 0 7px black;
+    margin-right: 20px; }
+  .actionHeader {
+    color: white;
+    width: inherit;
+    font-size: 26px;
+	font-family:"Lobster";
+    display: flex;
+    justify-content: space-between; }
+  .actionBlock__text {
+    color: white;
+    width: 95%; }
+  .actionBlock__line {
+    width: 94px;
+    height: 2px;
+    background: white;
+    margin-left:10px;
+	margin-right:10px;
+	}
+
+.Main__About {
+  padding-top: 40px;
+padding-bottom: 40px; 
+align-items: stretch; }
+
+  .aboutDesc {
+    padding-left:70px;
+	padding-right:70px;
+    text-align: center;
+    align-self: center; }
+    .aboutDesc__header {
+      margin-top: -1px;
+      margin-bottom: 0;
+      color: blue; }
+    .aboutDesc__text {
+      margin-top: 15px;
+	  margin-bottom:40px;
+      color: gray;
+      font-family: "Open Sans"; }
+  .aboutItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; }
+    .aboutItem {
+      text-align: center;
+     }
+	 .aboutItem__grayText {
+  font-family: "Lobster";
+  font-size: 22px;
+  color: gray; }
+
+.aboutItem__blueText {
+  font-family: "Lobster";
+  font-size: 40px;
+  color: blue; }
+
+@media screen and (max-width: 1600px) {
+  .Slider {
+    max-width: 1600px;
+    height: 43vw; } }
+
+@media screen and (max-width: 1200px) {
+  .LogoStripe, .Navigation, .Slider, .Main__About, .Main__Header {
+    padding-left: 15px;
+    padding-right: 15px; } }
+
+@media screen and (max-width: 1150px) {
+  h1 {
+    font-size: 50px;
+    line-height: 1.2; }
+  .LogoStripe__Logo img {
+    height: 167px; }
+  .Navigation {
+    height: 80px; }
+  .Burger {
+    display: block;
+    justify-content: center; }
+  .HorizMenu {
+    display: none; }
+  .Slider {
+    max-width: 100%;
+    height: 43vw; }
+  .mainMessage {
+    padding-bottom: 67px; }
+  .mainMessage__header {
+    display: flex; }
+  .actionBlock__text {
+    text-align: center; } }
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 42px; }
+  .mainMessage {
+    width: 380px; }
+    .mainMessage__text {
+      font-size: 16px;
+      line-height: 1.5; }
+    .mainMessage__buttons .Button {
+      font-weight: bold; }
+  .mainMessage__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:50px;
+	margin-bottom:50px;	}
+  .actionBlock:first-child {
+    margin-bottom: 20px; }
+  .actionBlock:last-child {
+    margin-left: -10px;
+    margin-top: 20px; } }
+
+@media screen and (max-width: 860px) {
+  h2 {
+    font-size: 36px; }
+  h3 {
+    font-size: 22px; }
+  .aboutItem__grayText {
+    font-size: 18px;
+    line-height: 1.2; }
+  .aboutItem__blueText {
+    font-size: 28px;
+    line-height: 1.2; }
+  .mainMessage {
+    padding-bottom: 0;
+    width: 45%; }
+  .Main__Header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top:50px;
+	margin-bottom:50px;	 }
+  .actionBlock__text {
+    text-align: left;
+    padding: 3px 5px; }
+  .aboutItem img {
+    height: 18vw; } }
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+    line-height: 1; }
+  .lobsterGray {
+    font-size: 22px;
+    line-height: 1.2; }
+  .lobsterBlue {
+    font-size: 40px;
+    line-height: 1.2; }
+  .slider {
+    height: 59vw; }
+  .userAction__description {
+    width: 100%; }
+  .userAction__buttons {
+    justify-content: center;
+    margin-bottom: 20px; }
+  .actionBlock {
+    margin-bottom:15px;
+    padding: 20px; }
+    .actionBlock:last-child {
+      margin-left: 20px;
+      margin-bottom: 0; }
+    .actionBlock__line {
+      display: block; }
+  .aboutItems{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .aboutItem {
+      margin-bottom: 35px; }
+      .aboutItem img {
+        margin-bottom: 5px; }
+      .aboutItem:last-child {
+        margin-bottom: 0; } }
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 36px; }
+  .Main__About {
+    padding-left:20px; 
+	padding-right:20px; } }
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 28px; }
+  .actionBlock__text {
+    font-size: 14px;
+    line-height: 1.2; } }
+
+@media screen and (max-width: 500px) {
+  .red p:after {
+    margin-left: 6px; }
+  .Button {
+    width: 130px;
+    height: 28px;
+    font-size: 9px;
+    line-height: 24px;
+    text-align: center; }
+  .LogoStripe a {
+    margin-right: 15px; }
+    .LogoStripe a :last-child {
+      margin-right: 0; }
+  .LogoStripe__Logo img {
+    height: 110px; }
+  .Navigation {
+    height: 42px; } }
